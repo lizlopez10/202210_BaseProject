@@ -1,3 +1,11 @@
 .subtext{
     margin: 0px;
 }
+.titlePage{
+    text-shadow: lightgray 2px 2px;
+    font-weight: bolder;
+    margin-bottom: 3px;
+}
+.table{
+    margin-top: 10px;
+}
