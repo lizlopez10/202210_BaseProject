@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <img src="http://ccaentrerios.org/wp-content/uploads/2020/06/325432-giacinti-automoviles-multimarcas-banner.png" class="img-fluid" alt="Responsive image">
+
+  <div class="col-6">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Línea</th>
+          <th scope="col">Modelo</th>
+        </tr>
+        </thead>
+        <tr *ngFor="let vehiculo of listTotal">
+          <th>{{vehiculo.id}}</th>
+          <td>
+            <dd>{{vehiculo.marca}}</dd>
+          </td>
+          <td>
+            <dd>{{vehiculo.modelo}}</dd>
+          </td>
+          <td>
+            <dd>{{vehiculo.linea}}</dd>
+          </td>
+      </tr>
+    </table>
+    <p class="subtext" *ngFor="let elem of nuevoObjeto | keyvalue"> Total {{elem.key}} : {{elem.value}}</p> 
+  </div>
+</div>
